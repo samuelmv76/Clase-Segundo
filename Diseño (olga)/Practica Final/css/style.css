@@ -1,0 +1,113 @@
+/* Estilos generales */
+
+body {
+    background-image: url(../imagenes-video/spotify_azul.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 20px;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+}
+
+h1, h2 {
+    font-family: 'Helvetica', sans-serif;
+    color: #444;
+    
+}
+article h1{
+    color: lightblue;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+
+nav {
+ 
+    width: 100%;
+    background-color: #333;
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block; 
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #333;
+ 
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+
+aside {
+    float: right;
+    width: 25%;
+    background-color: rgba(255, 255, 255, 0.67);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.67); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+    width: 63%;
+}
+
+section article {
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+
+}
+
+article h2 {
+    color: #add8e6;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+table{
+    border-collapse: collapse;
+}
+th,td{
+    border: solid black 1px;
+}
+h3 {
+    color: lightblue;
+}

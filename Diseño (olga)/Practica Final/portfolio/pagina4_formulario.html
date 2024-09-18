@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <title>Formulario</title>
+    <style>
+        form {
+            display: inline-block; 
+            font-family:  serif;
+        }
+    
+        form p {
+            font-size: 1.1em;
+            color:lightblue;
+        }
+
+        section{
+            margin-left: 34%;
+            width: 30%;
+            padding: 2%;
+        }
+        footer{
+            text-align: center;
+        }
+    </style>
+</head>
+<body> 
+    <div id="agrupar">
+        <header id="cabecera">
+            <h1>Formulario</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Ed_Sheeran.html">Ed Sheeran</a></li>
+                <li><a href="Billie_Eilish.html">Billie Eilish</a></li>
+                <li><a href="The_Weeknd.html">The Weeknd</a></li>
+                <li><a href="pagina4_formulario.html">Formulario</a></li>
+            </ul>
+        </nav>
+        <section>
+            <div class="formulario">
+                <article>
+                    <h2>Formulario de Información</h2>
+                    <form name="formulario" action="#">
+                        <fieldset>
+                            <legend>Datos Personales</legend>
+                            <p>Nombre </p>
+                            <input type="text" name="nombre" placeholder="Escriba aqui..." required="required">
+                            
+                            <p>Apellidos</p>
+                            <input type="text" name="Apellidos" placeholder="Escriba aqui..." required="required">
+                        
+                            <p>Teléfono</p>
+                            <input type="tel" name="telefono" placeholder="Escriba aqui..." required="required" pattern="[0-9]{3}-[0-9]{6}">
+                    
+                            <p>Email</p>
+                            <input type="email" name="email" placeholder="Escriba aqui..." required="required">
+                    
+                            <br/>
+                    
+                            <p>Fecha de Nacimiento</p>
+                            <input type="date" name="fecha" required="required">
+                        
+                            <p>Sexo</p>
+                            <input type="radio" name="sexo" value="H" required="required">Hombre
+                            <input type="radio" name="sexo" value="M" required="required">Mujer
+                            <br/>
+                            <br/>
+                        </fieldset>
+
+                        <fieldset>
+                            <p>País de Residencia</p>
+                            <select name="pais">
+                                <option value="España">España</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="México">México</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Perú">Perú</option>
+                            </select>
+                            <br/>
+                            <br/>
+                            <p>Comentarios: </p>
+                            <textarea name="comentario" rows="4" cols="30"></textarea>
+                        </fieldset>
+                        <br/>
+                        <br/>
+                        <input style="color: red;" type="checkbox"> Deseo recibir notificaciones.
+                        <br/>
+                        <br/>
+                        <br/>
+                        <input type="submit" value="   Enviar   ">
+                        <input type="reset" value="  Reiniciar  ">
+                    </form>
+                </article>
+            </div>
+        </section>
+        <footer>
+            <p>Derechos de autor &copy; 2024 - Samuel Martos Vidal</p>
+        </footer>
+    </div>
+</body>
+
+</html>

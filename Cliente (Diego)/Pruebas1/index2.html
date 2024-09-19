@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<button id="miBoton">Pasa el ratón por aquí</button>
+
+<script>
+    // Obtener el botón
+    const boton = document.getElementById("miBoton");
+
+    // Agregar el evento onmouseover para cambiar el color de fondo
+    boton.onmouseover = function() {
+        boton.style.backgroundColor = 'red';
+    };
+
+    // Agregar el evento onmouseout para restaurar el color original
+    boton.onmouseout = function() {
+        boton.style.backgroundColor = '';
+    };
+</script>
+</html>

@@ -8,6 +8,7 @@ body {
     padding: 20px;
     font-family: 'Arial', sans-serif;
     color: #333333;
+    
 }
 
 h1, h2 {
@@ -110,4 +111,45 @@ th,td{
 }
 h3 {
     color: lightblue;
+}
+footer
+{
+    position: relative;
+    margin-top:30px;
+    width:100%;
+    height: 150px;
+    background-color:#333333;
+    color: #ffffff;
+}
+.Redes h2{
+    color: #ffffff;
+}
+.Redes{
+    min-width: 300px;
+    display: flex;
+    justify-content: space-around;  
+}
+.Redes a{
+    text-decoration: none;
+    font-size: 28px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background: #314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Redes a:link{
+    color: lightblue;
+}
+.Redes a:visited{
+    color: lightblue;
+}
+footer p{
+    text-align: center;
 }

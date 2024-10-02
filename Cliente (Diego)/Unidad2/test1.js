@@ -29,3 +29,17 @@ function testUnidad2(){
             ${libs.join(", ")}
         `);
 }
+function testUnidad2_1() {
+    let num1,num2;
+    num1=prompt('Introduce el primer numero: ','')
+    num2=prompt('Introduce el segundo numero: ','')
+    num1=parseInt(num1);
+    num1=parseInt(num2);
+    alert(num1);
+    if (num1>num2){
+        alert('el mayor es '+num1);
+    }
+    else{
+        alert('el mayor es '+num2)
+    }
+}

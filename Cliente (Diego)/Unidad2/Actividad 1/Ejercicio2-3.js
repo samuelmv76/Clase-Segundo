@@ -2,7 +2,8 @@ function dividirExcepcion() {
    try {
         let num1= prompt("Introduce el primer numero para dividir: ");
         let num2= prompt("Introduce el segundo numero para dividir: ");
-
+          parseInt=num1;
+          parseInt=num2;
         //¿Qué sucede si en lugar de dividir dos números,
         //¿Y si no introducimos nada?
           if((num1.trim() || num2.trim()) == "") {
@@ -14,7 +15,7 @@ function dividirExcepcion() {
                throw new Error("Error: No se puede dividir por 0.");
           }    
             // intentamos dividir dos textos?
-          if(isNaN(num1) || (num2)) {
+          if(isNaN(num1) || isNaN(num2)) {
                throw new Error("not a number");
           }
         let division=num1/num2;

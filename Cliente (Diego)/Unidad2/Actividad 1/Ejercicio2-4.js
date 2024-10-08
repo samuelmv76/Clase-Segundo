@@ -1,14 +1,4 @@
 function tiempoDeVida() {
-<<<<<<< HEAD
-    let num1= prompt("Introduce tu nombre: ");
-    let num2= prompt("Introduce tu edad: ");
-/* Haz un programa que nos pregunte nuestro nombre, nuestra edad. El programa nos tiene que dar
-como resultado los días que hemos vivido hasta el momento (suponiendo años de 365 días). */
-    parseInt(num2);
-    let dias=num2*365;
-    document.write(dias);
-
-=======
     try {
         let nombre= prompt("Introduce tu nombre: ");
         let num= prompt("Introduce tu edad: ");
@@ -26,5 +16,4 @@ como resultado los días que hemos vivido hasta el momento (suponiendo años de 
     } catch (error) {
         alert(error.message)
     }
->>>>>>> bf8d5520243d102c9b327281370ebf257c6572e3
 }

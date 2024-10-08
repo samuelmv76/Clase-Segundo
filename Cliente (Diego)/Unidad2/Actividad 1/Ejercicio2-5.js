@@ -1,5 +1,4 @@
 /*
-<<<<<<< HEAD
     Haz un programa que nos pida un número,
      y nos muestre en una única pantalla, el doble, el triple
     y el cuádruple del número que habíamos introducido (cada uno en una línea).
@@ -13,8 +12,3 @@ function numero() {
     document.write(triple+"</br>");
     document.write(cuadruple);
 }
-=======
-Haz un programa que nos pida un número, y nos muestre en una única pantalla, el doble, el triple 
-y el cuádruple del número que habíamos introducido (cada uno en una línea).
-*/
->>>>>>> bf8d5520243d102c9b327281370ebf257c6572e3

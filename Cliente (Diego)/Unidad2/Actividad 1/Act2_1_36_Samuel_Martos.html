@@ -17,18 +17,19 @@
             divisor =parseInt(divisor);
             if (dividendo<divisor)
                 alert('El dividendo debe ser superior al divisor');
-                else{
+                else if(divisor<=0){
+                    alert("El divisor no puede ser negativo o 0")
+                }
+                else{     
+                    let x = dividendo;
+                    let contador=0;
 
-                
-            let x = dividendo;
-            let contador=0;
-
-            while (x>=divisor) {
-                x-=divisor;
-                contador++;
-            }
-            document.write('La division de ',dividendo,' divisor ',' da como cociente ',contador,' y como resto ',x)
-            }
+                    while (x>=divisor) {
+                        x-=divisor;
+                        contador++;
+                    }
+                    document.write('La division de ',dividendo,' divisor ',' da como cociente ',contador,' y como resto ',x)
+                }
     </script>
 </body>
 </html>

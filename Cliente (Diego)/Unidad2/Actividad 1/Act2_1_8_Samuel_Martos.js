@@ -6,7 +6,7 @@ Haz un programa que funcione de la manera siguiente:
 • Al final nos presente:
 =======================
 Hola “nombre y apellido”
-Adiós habitante de “Población”
+Adiós habitante de “Población” 
 ======================
 */
 function name() {

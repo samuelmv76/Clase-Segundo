@@ -1,12 +1,27 @@
 h1{
     color: blueviolet;
     background-color: red;
+    display:block;
+    height: 30px;
+    width: 400px;
 }
 h2{
+    display: inline;
     color: blueviolet;
     background-color: yellow;
 }
 p{
+    display: inline;
     color: white;
     background-color: blue;
+}
+ul{
+    background-color: blueviolet;
+}
+img{
+    display: block;
+    background-color: greenyellow;
+}
+a{
+    display: block;
 }

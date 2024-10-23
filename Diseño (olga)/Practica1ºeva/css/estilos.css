@@ -96,11 +96,11 @@ aside {
   border-radius: 20px;
   color: rgb(243, 55, 132);
   padding: 10px;
-  position: fixed; /* Fija la posición */
+  position: absolute; /* Fija la posición */
   right: 50%;/*- Rectángulo de compra más o menos en esa posición y estructura similar.*/
   text-align: center;
   top: 30%;
-  width: 20%;
+  width: 23%;
 }
 
 aside a {

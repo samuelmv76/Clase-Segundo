@@ -125,6 +125,18 @@ main h1 {
   text-align: center;
 }
 
+/* Mostrarmos la primera letra con un borde diferente */
+.bottle div::first-letter {
+border-right: 1px solid
+#121867;
+border-bottom: 1px solid #121867;
+color: rgb(243, 55, 132);
+font-size: 2em;
+font-weight: bolder;
+margin-right: 10px;
+padding-right: 10px;
+}
+
 /* Línea separadora de elementos */
 main h1::after,
 main:after {

@@ -49,3 +49,12 @@ const sumArray = arr => {
 }
 console.log(sumArray(numbers))
 //15
+
+//OBJETO PERSONA
+function Persona(nombre, edad) {
+  this.nombre = nombre;
+  this.edad = edad;
+}
+
+const juan = new Persona("Juan", 25);
+console.log(juan.nombre); // "Juan"

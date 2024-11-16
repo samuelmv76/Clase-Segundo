@@ -42,16 +42,17 @@ body {
     margin: 5%;
     padding-left:30% ;
     text-decoration: none;
+    font-weight: bold;
+    font-size: large;
 }
 /* */
 /* Main content layout */
 .main-content {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 70% 30%;
     justify-content: space-between;
 }
 .text-section{
-    max-width: 70%;
     display: grid;
     grid-column: 1;
 }
@@ -65,22 +66,23 @@ body {
 hr{
     max-width: 95%;
     margin-left: 3%;
-    border-style: solid;    
+    background-color: black;
+    height: 3px;
 }
 .image-section {
     display: grid;
-     grid-auto-flow: column;
+     grid-auto-flow: row;
     width: 100%;
     background-color: #e67e22;
-    padding: 2%;
+    padding: 5%;
     grid-column: 2;
 }
 
 .image-box {
     background-color: #1124fd;
     
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 90%;
     margin-bottom: 10%;
 }
 
@@ -93,7 +95,9 @@ hr{
     color: #fff;
     padding: 20px;
 }
-
+.contact{
+    font-weight: bold;
+}
 .social-icons a {
     color: #fff;
     margin-left: 10px;

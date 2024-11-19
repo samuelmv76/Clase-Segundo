@@ -7,14 +7,18 @@
 </head>
 <body>
     <form action="">
-        <label for="">INtroduce tu texto aqui:
-        </label>
-        <input type="text" id="txtEntrada" value="awdoadj"><br><br>
-        <input type="button" value="Click">
-        <label id="lblError"></label>
+        <label id="lblAddress" for="provide-address">¿Direccion?</label>
+        <input type="checkbox" id="provide-address">
+
+        <label for="street">Calle:</label>
+        <input type="text" id="street" disabled="true">
+
+        <label for="country">Pais:</label>
+        <input type="text" id="country" disabled="true">
     </form>
     <script>
-        document.getElementById('Entrada').value="";
+        let etiqueta = document.getElementById('lblEntrada');
+        etiqueta.classList.remove('blue');
     </script>
 </body>
 </html>

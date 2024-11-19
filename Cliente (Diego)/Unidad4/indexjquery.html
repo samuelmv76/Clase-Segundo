@@ -10,16 +10,17 @@
     <p id="parrafo" name="ParrafoNombre"></p>
 
     <form action="">
-        <label for="">INtroduce tu texto aqui:</label><br><br>
-        <input type="text" id="txtEntrada" value="Introduzca una cadena"><br><br>
+        <label for="provide-address">¿Direccion?</label>
+        <input type="checkbox" id="provide-address">
 
-        <input type="button" value="Click">
-        <label id="lblError"></label>
+        <label for="street">Calle:</label>
+        <input type="text" id="street" disabled="true">
+
+        <label for="country">Pais:</label>
+        <input type="text" id="country" disabled="true">
     </form>
 <script>
-let currentInput =$('#txtEntrada');
-currentInput.next().next().next().next().text('Mensaje de error');
-
+$('#provide-address').nextAll('input').attr('disable', 'false')
 
 //$(elemento)
 //$('form')

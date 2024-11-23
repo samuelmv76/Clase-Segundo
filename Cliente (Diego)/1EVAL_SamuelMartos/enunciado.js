@@ -8,28 +8,28 @@ el empleado introduce el pedido en el programa. Cada pedido se identifica con un
 3. TIPOS DE DATOS 
  
 De un modo general, la aplicación manejará los siguientes datos: 
- Pedidos almacenará pedidos realizados por los clientes. Se deben utilizar los tipos de datos 
-más  adecuados  a  cada  campo  (entero,  decimal,  booleano,  cadena,  etc.).  Debe  incluir  la 
-siguiente información: 
-o Número de pedido: el número único que identifica al pedido. 
-o Cliente: nombre y apellidos del cliente, que permitirá al menos 50 caracteres. 
-o Fecha de pedido: la fecha de realización del pedido.  
-o Procesado: que indicará si el pedido ya ha sido procesado de forma completa 
-o Servido: que indicará si el pedido ya ha sido servido al cliente.  
-o Piezas: Una colección de las piezas que forman parte del pedido. 
- Piezas. En este tipo de datos se recogen las piezas que pueden servirse en un pedido. Debe 
+    - Pedidos almacenará pedidos realizados por los clientes. Se deben utilizar los tipos de datos 
+    más  adecuados  a  cada  campo  (entero,  decimal,  booleano,  cadena,  etc.).  Debe  incluir  la 
+    siguiente información: 
+    - Número de pedido: el número único que identifica al pedido. 
+    - Cliente: nombre y apellidos del cliente, que permitirá al menos 50 caracteres. 
+    - Fecha de pedido: la fecha de realización del pedido.  
+    - Procesado: que indicará si el pedido ya ha sido procesado de forma completa 
+    - Servido: que indicará si el pedido ya ha sido servido al cliente.  
+    - Piezas: Una colección de las piezas que forman parte del pedido. 
+- Piezas. En este tipo de datos se recogen las piezas que pueden servirse en un pedido. Debe 
 incluir la siguiente información: 
-o Número  de  pieza.  Aunque  son  piezas  al  corte,  se  identificará  cada  una  de  ellas  de 
+- Número  de  pieza.  Aunque  son  piezas  al  corte,  se  identificará  cada  una  de  ellas  de 
 forma única con un número entero. 
-o Número de pedido. Pedido al que está asociada la pieza. Al ser a medida, cada pieza 
+- Número de pedido. Pedido al que está asociada la pieza. Al ser a medida, cada pieza 
 solo puede pertenecer a un pedido. 
-o Largo: el largo de la pieza en cm. 
-o Ancho: el ancho de la pieza en cm.  
-o Grosor: el grosor de la pieza en cm.  
-o Color:  el  color  del  chapeado  de  la  pieza.  Si  se  guarda con el color “Natural” quiere 
+- Largo: el largo de la pieza en cm. 
+- Ancho: el ancho de la pieza en cm.  
+- Grosor: el grosor de la pieza en cm.  
+- Color:  el  color  del  chapeado  de  la  pieza.  Si  se  guarda con el color “Natural” quiere 
 decir que no lleva chapeado.  
-o AmbasCaras: si deben estar chapeadas las dos caras  
-o Cortada: que indicará si la pieza ya ha sido cortada
+- AmbasCaras: si deben estar chapeadas las dos caras  
+- Cortada: que indicará si la pieza ya ha sido cortada
 
 4. FUNCIONALIDAD JAVASCRIPT 
  

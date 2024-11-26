@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="pedidos.js"></script>
-</head>
-<body>
-    <!--Crear eñ formulario para crear los pedidos-->
-    <script>
-        const pedido = new pedidos();
-        pedido.cuestionario();
-    </script>
-    
-</body>
-</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MaderAvilés</title>
+        <link rel="stylesheet" href="style/styles.css">
+        <script src="scripts/pedidos.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>MaderAvilés - Carpintería</h1>
+        </header>
+        <main>
+            <nav>   
+                <ul>
+                    <li><a href="pedidos.html">Gestión de Pedidos</a></li>
+                    <li><a href="piezas.html">Gestión de Piezas</a></li>
+                    <li><a href="detalle_pedido.html">Detalle de Pedidos</a></li>
+                </ul>
+            </nav>
+            <form action="" method="">
+                <label for="">INTRODUCE EL NUMERO DEL PEDIDO:</label>
+                <input type="text" id="numero-Pedido"></input>
+                
+                <button type="button" id="comprobar">Comprobar</button>
+                <!-- comprobar el numero de pedido -->
+                <script>
+                    botonin();
+                </script>
+            </form>
+        </main>
+        <footer>
+            <p>© 2024 MaderAvilés</p>
+        </footer>
+    </body>
+    </html>

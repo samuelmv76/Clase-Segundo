@@ -7,12 +7,6 @@ class pedidos {
       this.servido = servido; // Booleano, si ha sido servido
       this.piezas = []; // Colección de piezas (instancias de Pieza)
     }
-    //cuestionario para introducir pedidos
-    cuestionario(){
-      document.write(
-        "<h2>CUESTIONARIO</h2>"
-      );
-    };
   
     // Métodos
     agregarPieza(pieza) {
@@ -47,3 +41,50 @@ class pedidos {
     }
     
   }
+
+function botonin(){
+  let numerobuscar=document.getElementById("numero-Pedido");
+  console.log(numerobuscar);
+    return pedidosList.find(pedido => pedido.numeroPedido === numerobuscar);
+} 
+
+
+
+
+
+  // Datos simulados
+  const pedidosList = [
+    new pedidos(1, "Juan Pérez", "2024-11-01"),
+    new pedidos(2, "Ana López", "2024-11-15", true),
+    new pedidos(3, "Carlos Gómez", "2024-11-20", true, true),
+  ];
+
+  // Función para buscar un pedido
+  function buscarPedidoPorID(id) {
+    return pedidosList.find(pedido => pedido.numeroPedido === id);
+  }
+      //cuestionario para introducir pedidos
+      function cuestionario() {
+        // Instancia de la clase Pedidos
+        const pedidos = new Pedidos();
+        
+        // Selecciona el botón y el campo de texto
+
+    
+        addEventListener('click', () => {
+            const numeroPedido = input.value.trim();
+        });
+      }
+
+      function comprobar() {
+        // Instancia de la clase Pedidos
+        const pedidos = new Pedidos();
+    
+        // Selecciona el botón y el campo de texto
+        const boton = document.getElementById('comprobar');
+        const input = document.querySelector('input');
+    
+        boton.addEventListener('click', () => {
+            const numeroPedido = input.value.trim();
+        })
+      };

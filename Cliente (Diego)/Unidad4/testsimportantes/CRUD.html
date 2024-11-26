@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CRUD en JavaScript</title>
+    <title>CRUD en JavaScript sin JSON</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -35,7 +35,7 @@
     </style>
 </head>
 <body>
-    <h1>CRUD en JavaScript (sin JSON)</h1>
+    <h1>CRUD en JavaScript sin JSON</h1>
 
     <!-- Formulario para CRUD -->
     <form id="crudForm">
@@ -75,32 +75,32 @@
     <script>
         // Inicializar datos si no existen
         if (!localStorage.getItem("items")) {
-            localStorage.setItem("items", ""); // Cadena vacía
+            localStorage.setItem("items", "[]"); // Lista vacía inicial
         }
 
         // Crear elemento desde el formulario
         function createItemFromForm() {
-            const id = document.getElementById("id").value;
+            const id = parseInt(document.getElementById("id").value);
             const name = document.getElementById("name").value;
             const completed = document.getElementById("completed").checked;
 
-            createItem(`${id},${name},${completed}`);
+            createItem(id, name, completed);
             displayItems();
         }
 
         // Actualizar elemento desde el formulario
         function updateItemFromForm() {
-            const id = document.getElementById("id").value;
+            const id = parseInt(document.getElementById("id").value);
             const name = document.getElementById("name").value;
             const completed = document.getElementById("completed").checked;
 
-            updateItem(id, `${id},${name},${completed}`);
+            updateItem(id, name, completed);
             displayItems();
         }
 
         // Eliminar elemento desde el formulario
         function deleteItemFromForm() {
-            const id = document.getElementById("id").value;
+            const id = parseInt(document.getElementById("id").value);
 
             deleteItem(id);
             displayItems();
@@ -116,57 +116,67 @@
 
             // Agregar filas
             items.forEach(item => {
-                const [id, name, completed] = item.split(","); // Separar campos
                 const row = document.createElement("tr");
                 row.innerHTML = `
-                    <td>${id}</td>
-                    <td>${name}</td>
-                    <td>${completed === "true" ? "Sí" : "No"}</td>
+                    <td>${item.id}</td>
+                    <td>${item.name}</td>
+                    <td>${item.completed ? "Sí" : "No"}</td>
                 `;
                 tableBody.appendChild(row);
             });
         }
 
         // CRUD Funciones
-        function createItem(newItem) {
-            const items = localStorage.getItem("items");
-            const itemsArray = items ? items.split("|") : [];
-            
-            // Comprobar si el ID ya existe
-            if (itemsArray.some(item => item.startsWith(newItem.split(",")[0] + ","))) {
-                console.error("El ID ya existe");
-                alert("El ID ya existe, usa otro.");
+
+        // Crear un nuevo item
+        function createItem(id, name, completed) {
+            const items = readItems();
+
+            // Verificar si el ID ya existe
+            if (items.some(item => item.id === id)) {
+                alert("El ID ya existe. Usa otro.");
                 return;
             }
 
-            itemsArray.push(newItem);
-            localStorage.setItem("items", itemsArray.join("|"));
+            const newItem = `id:${id},name:${name},completed:${completed}`;
+            items.push(newItem);
+            localStorage.setItem("items", items.join("|"));
         }
 
+        // Leer los items almacenados
         function readItems() {
             const items = localStorage.getItem("items");
-            return items ? items.split("|") : [];
+            if (!items) return [];
+
+            // Convertir cada cadena de vuelta a un objeto
+            return items.split("|").map(item => {
+                const parts = item.split(",");
+                const id = parseInt(parts[0].split(":")[1]);
+                const name = parts[1].split(":")[1];
+                const completed = parts[2].split(":")[1] === "true";
+
+                return { id, name, completed };
+            });
         }
 
-        function updateItem(id, updatedItem) {
-            const items = localStorage.getItem("items");
-            const itemsArray = items ? items.split("|") : [];
-            const index = itemsArray.findIndex(item => item.startsWith(id + ","));
+        // Actualizar un item
+        function updateItem(id, name, completed) {
+            const items = readItems();
+            const index = items.findIndex(item => item.id === id);
 
             if (index !== -1) {
-                itemsArray[index] = updatedItem;
-                localStorage.setItem("items", itemsArray.join("|"));
+                items[index] = `id:${id},name:${name},completed:${completed}`;
+                localStorage.setItem("items", items.join("|"));
             } else {
-                console.error("Elemento no encontrado");
                 alert("Elemento no encontrado");
             }
         }
 
+        // Eliminar un item
         function deleteItem(id) {
-            const items = localStorage.getItem("items");
-            const itemsArray = items ? items.split("|") : [];
-            const updatedItems = itemsArray.filter(item => !item.startsWith(id + ","));
-            localStorage.setItem("items", updatedItems.join("|"));
+            let items = readItems();
+            items = items.filter(item => item.id !== id);
+            localStorage.setItem("items", items.map(item => `id:${item.id},name:${item.name},completed:${item.completed}`).join("|"));
         }
 
         // Mostrar los elementos al cargar la página

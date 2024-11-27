@@ -32,6 +32,7 @@
 
             <script>
                 // Definimos la clase 'Pedidos'
+                /*
                 class Pedidos {
                     constructor(numeroPedido, cliente, fechaPedido, procesado = false, servido = false) {
                         this.numeroPedido = numeroPedido; // Número entero único
@@ -41,13 +42,13 @@
                         this.servido = servido; // Booleano, si ha sido servido
                         this.piezas = []; // Colección de piezas (instancias de Pieza)
                     }
-                }
+                }*/
                 //pedidos=new Pedidos();   
                 // Array de pedidos de ejemplo
                 const pedidos = [
-                   pedido1= new Pedidos(1, "Juan Pérez", "2024-11-25", true, false),
-                   pedido2= new Pedidos(2, "Ana López", "2024-11-26", false, false),
-                   pedido3=new Pedidos(3, "Carlos García", "2024-11-24", true, true),
+                   pedido1= new Pedidos(1, "Juan Domingo", "2024-11-25", true, false),
+                   pedido2= new Pedidos(2, "CR7", "2024-11-27", false, false),
+                   pedido3=new Pedidos(3, "FAKER", "2024-11-24", true, true),
                 ];
 
                 document.getElementById("comprobar").addEventListener("click", comprobar);

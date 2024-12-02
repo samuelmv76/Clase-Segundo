@@ -51,7 +51,7 @@ function cargarDatosIniciales() {
 
   setLocalStorage(pedidosKey, pedidos);
 
-  //define las piezas "fijas"
+  //define las piezas fijas
   const piezasFijas = [
     {
       numeroPieza: 1,
@@ -75,7 +75,7 @@ function cargarDatosIniciales() {
     }
   ];
 
-  //asegurarse de que las piezas fijas estén siempre en LocalStorage
+  //mirar que las piezas fijas estén siempre en LocalStorage
   for (let i = 0; i < piezasFijas.length; i++) {
     const piezaFija = piezasFijas[i];
     let existe = false;

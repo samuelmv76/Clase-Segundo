@@ -91,7 +91,7 @@ function cargarDatosIniciales() {
   }
 
   setLocalStorage(piezasKey, piezas);
-}
+}//final de la funcion cargarDatosIniciales()
 
 document.addEventListener("DOMContentLoaded", () => {
   cargarDatosIniciales(); //carga los datos iniciales

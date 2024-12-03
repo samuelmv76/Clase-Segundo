@@ -10,33 +10,51 @@
         class alumno {
             constructor(nombre,notas,notaMedia) {
                 this.nombre=nombre;
-                this.nombre=notas;
-                this.notaMedia=notaMedia;
-                alumno.prototype.notaMedia = function() {
-                    return ((this.nota1 + this.nota2 + this.nota3) / 3).toFixed(2);
-                };
+                this.notas=[];
+                this.notaMedia = this.calcularNotaMedia(); // Se calcula automáticamente
             }
+
+            // Método privado para calcular la nota media
+            calcularNotaMedia() {
+                if (!this.notas.length) return 0; //si no hay notas = 0
+
+                let suma = 0; 
+                for (let i = 0; i < this.notas.length; i++) {
+                    suma += this.notas[i];
+                }
+
+                return +(suma / this.notas.length).toFixed(2); //calcula el promedio y lo redondea con toFixed
+                //el + hace que "string" se combiertan a numero 
+            }
+
             
-        }
-        //define los alumnos "fijos"
+        }//fin de la clase
+        function cargarDatosIniciales() {
+        //define los alumnos fijos
             const alumnosFijos = [
                 {
-                numeroPedido: 1,
-                cliente: "Juan Pérez",
-                fechaPedido: "2024-11-20",
-                procesado: false,
-                servido: false,
-                piezas: []
+                    nombre: "Juan Pérez",
+                    notas: [1,7,9],
                 },
                 {
-                numeroPedido: 2,
-                cliente: "Ana López",
-                fechaPedido: "2024-11-25",
-                procesado: true,
-                servido: false,
-                piezas: []
+                    nombre: "Ana López",
+                    notas: [7,7,7],
                 }
             ];
+            //convertir a JSON y guardar
+                localStorage.setItem('alumnos', JSON.stringify(alumnosFijos));
+            //recuperar y convertir de nuevo a objeto
+                let alumnosGuardados = JSON.parse(localStorage.getItem('alumnos'));
+                //console.log(alumnosGuardados[0].nombre); 
+                //console.log(alumnosGuardados[1].nombre); 
+                alumnosGuardados.forEach(alumno => {
+                    console.log(alumno.nombre); //ver todos los nombres de los alumnos
+                });
+        }
+        cargarDatosIniciales();
     </script>
+    <form action="" method="">
+
+    </form>
 </body>
 </html>

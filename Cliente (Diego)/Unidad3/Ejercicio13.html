@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class alumno {
+            constructor(nombre,notas,notaMedia) {
+                this.nombre=nombre;
+                this.nombre=notas;
+                this.notaMedia=notaMedia;
+                alumno.prototype.notaMedia = function() {
+                    return ((this.nota1 + this.nota2 + this.nota3) / 3).toFixed(2);
+                };
+            }
+            
+        }
+        //define los alumnos "fijos"
+            const alumnosFijos = [
+                {
+                numeroPedido: 1,
+                cliente: "Juan Pérez",
+                fechaPedido: "2024-11-20",
+                procesado: false,
+                servido: false,
+                piezas: []
+                },
+                {
+                numeroPedido: 2,
+                cliente: "Ana López",
+                fechaPedido: "2024-11-25",
+                procesado: true,
+                servido: false,
+                piezas: []
+                }
+            ];
+    </script>
+</body>
+</html>

@@ -10,28 +10,28 @@ body {
     color: #fff;
     background: linear-gradient(135deg, #001A57, #003883);
     background-attachment: fixed;
-    line-height: 1.6;
-    scroll-behavior: smooth;
+    line-height: 160%; /* Convertido desde 1.6 */
 }
 
 header {
     background-color: #001a57;
     color: #fff;
     text-align: center;
-    padding: 1.5rem 0;
+    padding: 24px 0; /* Convertido desde 1.5rem */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 40px; /* Convertido desde 2.5rem */
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 2px;
 }
+
 /* Estilo del nav */
 nav {
-    margin-top: 10px;
+    margin-top: 30px; /* Ajusta el valor según lo que necesites */
     background: #0a2a66; /* Azul profundo */
     border-top: 3px solid #ffd700; /* Línea dorada en la parte superior */
     border-bottom: 3px solid #ffd700; /* Línea dorada en la parte inferior */
@@ -52,7 +52,7 @@ nav a {
     color: #ffffff; /* Blanco */
     font-family: 'Arial', sans-serif;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 120%; /* Convertido desde 1.2em */
     text-transform: uppercase;
     padding: 10px 15px;
     border-radius: 5px;
@@ -60,7 +60,7 @@ nav a {
 
 nav a:hover {
     background: #ffd700; /* Fondo dorado al pasar el ratón */
-    color: #001f4d; /* Texto azul oscuro */
+    color: #001f4d; 
     transform: scale(1.1); /* Aumentar ligeramente el tamaño */
     box-shadow: 0 4px 6px rgba(255, 215, 0, 0.4); /* Sombra dorada */
 }
@@ -72,37 +72,36 @@ nav a:hover {
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    padding: 2rem;
+    padding: 32px; /* Convertido desde 2rem */
     min-height: 100vh;
 }
 
 .intro h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 40px; /* Convertido desde 2.5rem */
+    margin-bottom: 16px; /* Convertido desde 1rem */
     text-transform: uppercase;
 }
 
 .intro p {
-    font-size: 1.2rem;
+    font-size: 19.2px; /* Convertido desde 1.2rem */
     max-width: 800px;
-    line-height: 1.6;
+    line-height: 160%; /* Convertido desde 1.6 */
     margin: 0 auto;
 }
 
 /* Sección 2: Alineaciones */
 .lineups h2 {
     color: #ffd700;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    margin-bottom: 32px; /* Convertido desde 2rem */
+    font-size: 32px; /* Convertido desde 2rem */
     text-transform: uppercase;
 }
 
 .teams {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 32px; /* Convertido desde 2rem */
     justify-content: center;
 }
 
@@ -111,7 +110,7 @@ nav a:hover {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 16px; /* Convertido desde 1rem */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     max-width: 350px;
@@ -119,7 +118,7 @@ nav a:hover {
 
 .team img {
     max-width: 80px;
-    margin-bottom: 1rem;
+    margin-bottom: 16px; /* Convertido desde 1rem */
 }
 
 .team ul {
@@ -130,20 +129,20 @@ nav a:hover {
 }
 
 .team ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px; /* Convertido desde 0.5rem */
 }
 
 /* Sección 3: Estadísticas */
 .stats {
     background: linear-gradient(135deg, #003883, #001A57);
-    padding: 2rem;
+    padding: 32px; /* Convertido desde 2rem */
     text-align: center;
 }
 
 .stats h2 {
     color: #ffd700;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    margin-bottom: 32px; /* Convertido desde 2rem */
+    font-size: 32px; /* Convertido desde 2rem */
     text-transform: uppercase;
 }
 
@@ -151,26 +150,25 @@ nav a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-
-    gap: 2%; /*alejar unas stats de otras*/
+    gap: 2%; /* Alejar unas stats de otras */
 }
 
 .player {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 8px;
-    padding: 1rem;
+    padding: 16px; /* Convertido desde 1rem */
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .player h3 {
     color: #ffd700;
-    margin-bottom: 1rem;
+    margin-bottom: 16px; /* Convertido desde 1rem */
 }
 
 .player p {
-    margin: 0.5rem 0;
+    margin: 8px 0; /* Convertido desde 0.5rem */
     color: #ddd;
 }
 
@@ -183,7 +181,7 @@ nav a:hover {
         margin: 0;
         padding: 10px;
         display: flex;
-        flex-direction: column;/*poner el nav en columna cuando esta en movil*/
+        flex-direction: column;/* Poner el nav en columna cuando esta en móvil */
         background-color: orange;
         gap: 30px;
     }
@@ -195,18 +193,18 @@ nav a:hover {
         margin: 0;
         padding: 10px;
         display: flex;
-        flex-direction: column;/*poner el nav en columna cuando esta en movil*/
+        flex-direction: column;/* Poner el nav en columna cuando esta en móvil */
         background-color: green;
         gap: 30px;
     }
    .lineups {
         margin-left: 1%;
    }
-   /*cambiar estadisticas de 2x2*/
+   /* Cambiar estadísticas de 2x2 */
    .stats-container {
         display: flex;
         flex-wrap: wrap;
-        gap: 2%; /*alejar unas stats de otras*/
+        gap: 2%; /* Alejar unas stats de otras */
     }
 }
 
@@ -215,7 +213,7 @@ footer {
     background-color: #001a57;
     color: #ffd700;
     text-align: center;
-    padding: 1rem 0;
-    margin-top: 3rem;
+    padding: 16px 0; /* Convertido desde 1rem */
+    margin-top: 48px; /* Convertido desde 3rem */
     border-top: 2px solid #ffd700;
 }

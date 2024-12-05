@@ -137,6 +137,7 @@ nav a:hover {
 .stats {
     background: linear-gradient(135deg, #003883, #001A57);
     padding: 2rem;
+    text-align: center;
 }
 
 .stats h2 {
@@ -148,6 +149,9 @@ nav a:hover {
 
 .stats-container {
     display: flex;
+    align-items: center;
+    justify-content: center;
+
     gap: 2%; /*alejar unas stats de otras*/
 }
 
@@ -174,7 +178,15 @@ nav a:hover {
 /*DESKTOP*/
 /*TABLET*/
 @media (max-width: 992px) {
-
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;/*poner el nav en columna cuando esta en movil*/
+        background-color: orange;
+        gap: 30px;
+    }
 }
 /*MOVIL*/
 @media (max-width: 576px) {
@@ -187,15 +199,14 @@ nav a:hover {
         background-color: green;
         gap: 30px;
     }
-   .lineups
-   {
-    margin-left: 1%;
+   .lineups {
+        margin-left: 1%;
    }
    /*cambiar estadisticas de 2x2*/
    .stats-container {
-    display: flex;
-    gap: 2%; /*alejar unas stats de otras*/
-
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%; /*alejar unas stats de otras*/
     }
 }
 

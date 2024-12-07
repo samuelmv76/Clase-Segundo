@@ -32,6 +32,11 @@ header h1 {
     text-transform: uppercase;
     font-weight: bold;
     letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+header h1:hover {
+    color: #ffd700;
 }
 
 nav ul {
@@ -40,7 +45,7 @@ nav ul {
     gap: 20px;
 }
 
-/*Efecto Hover en los enlaces de navegación */
+/* Efecto Hover en los enlaces de navegación */
 nav ul li a {
     text-decoration: none;
     color: #fff;
@@ -49,26 +54,25 @@ nav ul li a {
     padding: 8px 12px;
     border-radius: 4px;
     text-transform: uppercase;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
 nav ul li:hover {
-    background: none;
-    color: #000; /* Cambia el color del texto a negro */
-    transition: transform 0.3s ease;/*Transicion*/
-    transform: scale(1.3);
+    color: #001a57;
+    transition: transform 0.3s ease;
+    transform: scale(1.2);
 }
-/*.............*/
 
+/* Botón de login */
 .login-button img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     transition: transform 0.3s ease;
-    transform: scale(1.5);
 }
 
 .login-button img:hover {
-    transform: scale(1.7);
+    transform: scale(1.3);
     cursor: pointer;
 }
 
@@ -77,26 +81,29 @@ nav ul li:hover {
     background: url('../imagenes-videos/champions.jpg') no-repeat center center/cover;
     text-align: center;
     padding: 100px 20px;
-    min-height: 100vh; /* Cambié de 80vh a 100vh para que ocupe toda la altura de la ventana */
+    min-height: 100vh;
     color: #fff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
 .intro h2 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .intro p {
-    font-size: 18px;
+    font-size: 20px;
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.8;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
 }
 
 /* Sección Alineaciones */
-/* Sección de alineaciones */
 .lineups {
     padding: 50px 20px;
     background-color: #00214d;
@@ -105,10 +112,13 @@ nav ul li:hover {
 }
 
 .lineups h2 {
-    font-size: 32px;
+    font-size: 40px;
     color: white;
     margin-bottom: 40px;
     text-transform: uppercase;
+    border-bottom: 4px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 /* Contenedor de cada equipo */
@@ -117,20 +127,24 @@ nav ul li:hover {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
-    flex-wrap: wrap; /* Soporte para dispositivos pequeños */
+    flex-wrap: wrap;
     gap: 20px;
 }
 
-/* Información del equipo (alineación) */
 .team-info {
     flex: 1;
     max-width: 600px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .team-info h3 {
     font-size: 24px;
     margin-bottom: 20px;
     text-transform: uppercase;
+    color: #ffd700;
 }
 
 .team-info ul {
@@ -148,7 +162,7 @@ nav ul li:hover {
 
 .number {
     font-weight: bold;
-    color: #ffd700; /* Dorado para números */
+    color: #ffd700;
     margin-right: 10px;
 }
 
@@ -158,13 +172,6 @@ nav ul li:hover {
     margin-left: auto;
 }
 
-/* Colores según posición */
-.position.Portero { color: #0077cc; }
-.position.Defensa { color: #28a745; }
-.position.Centrocampista { color: #ff7f00; }
-.position.Delantero { color: #dc3545; }
-
-/* Imagen de la plantilla */
 .team-photo {
     flex: 1;
     text-align: center;
@@ -172,8 +179,9 @@ nav ul li:hover {
 
 .team-photo img {
     width: 80%;
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 4px solid #ffd700;
 }
 
 /* Sección Estadísticas */
@@ -184,15 +192,18 @@ nav ul li:hover {
 }
 
 .stats h2 {
-    font-size: 32px;
+    font-size: 40px;
     color: white;
     margin-bottom: 40px;
     text-transform: uppercase;
+    border-bottom: 4px solid #ffd700;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
 .stats-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     justify-content: center;
 }
@@ -200,11 +211,25 @@ nav ul li:hover {
 .player {
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
+    border-radius: 15px;
     padding: 20px;
-    width: 250px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.player:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.player img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ffd700;
 }
 
 .player h3 {
@@ -219,89 +244,52 @@ nav ul li:hover {
 
 /* Footer */
 footer {
-    background-image: url('../imagenes-videos/ronaldo\ f.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-color: #001A57; 
+    padding: 40px 20px; 
+    text-align: center; 
     color: white;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-}
-
 .footer-text {
-    font-size: 18px;
+    font-size: 20px; 
     font-weight: bold;
+    margin-bottom: 20px; 
 }
 
 .social-icons {
     display: flex;
-    gap: 15px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
 }
 
 .social-icons .icon {
     color: white;
-    font-size: 24px;
+    font-size: 36px;
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .social-icons .icon:hover {
     color: #ffd700;
+    transform: scale(1.2); 
 }
-/*DESKTOP*/
-/*TABLET*/
-@media (max-width: 992px) {
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 10px;
-        display: flex;
-        flex-direction: column;/* Poner el nav en columna cuando esta en móvil */
-        background-color: orange;
-        gap: 30px;
-    }
-}
+
+
 /* Responsividad */
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         gap: 10px;
+        background: #001a57;
     }
 
-    .teams {
+    .team-section {
         flex-direction: column;
-        justify-content: center;
     }
 
-    .team {
-        width: 80%;
-        margin: 0 auto 20px;
-    }
-
-    .stats-container {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .player {
-        width: 80%;
-        margin: 0 auto 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    .team-photo img {
+        width: 100%;
     }
 }

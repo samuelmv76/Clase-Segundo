@@ -96,10 +96,12 @@ nav ul li:hover {
 }
 
 /* Sección Alineaciones */
+/* Sección de alineaciones */
 .lineups {
     padding: 50px 20px;
-    text-align: center;
     background-color: #00214d;
+    color: #fff;
+    text-align: center;
 }
 
 .lineups h2 {
@@ -109,38 +111,69 @@ nav ul li:hover {
     text-transform: uppercase;
 }
 
-.teams {
+/* Contenedor de cada equipo */
+.team-section {
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: wrap; /* Soporte para dispositivos pequeños */
+    gap: 20px;
 }
 
-.team {
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    border-radius: 8px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+/* Información del equipo (alineación) */
+.team-info {
+    flex: 1;
+    max-width: 600px;
 }
 
-.team img {
-    max-width: 100px;
+.team-info h3 {
+    font-size: 24px;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
-
-.team ul {
+.team-info ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    color: #ddd;
+    text-align: left;
+    font-size: 18px;
 }
 
-.team ul li {
-    margin-bottom: 8px;
+.team-info ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.number {
+    font-weight: bold;
+    color: #ffd700; /* Dorado para números */
+    margin-right: 10px;
+}
+
+.position {
+    font-style: italic;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+/* Colores según posición */
+.position.Portero { color: #0077cc; }
+.position.Defensa { color: #28a745; }
+.position.Centrocampista { color: #ff7f00; }
+.position.Delantero { color: #dc3545; }
+
+/* Imagen de la plantilla */
+.team-photo {
+    flex: 1;
+    text-align: center;
+}
+
+.team-photo img {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Sección Estadísticas */

@@ -47,16 +47,19 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Aquí se agregarán las filas dinámicamente -->
+            <!-- Aqui se agregaran las filas dinamicamente -->
         </tbody>
     </table>
 
     <script>
         class GestionVuelos {
             constructor() {
-                this.vuelos = [];//Array que almacenara los vuelos
+                //intentamos cargar los vuelos desde localStorage
+                const vuelosGuardados = localStorage.getItem('vuelos');
+                this.vuelos = vuelosGuardados ? JSON.parse(vuelosGuardados) : [];
             }
-            //Metodo para agregar un nuevo vuelo
+
+            //metodo para agregar un nuevo vuelo
             agregarVuelo(numeroVuelo, origen, destino, fecha, horaSalida) {
                 const nuevoVuelo = {
                     numeroVuelo,
@@ -65,22 +68,24 @@
                     fecha,
                     horaSalida
                 };
-                this.vuelos.push(nuevoVuelo);//Lo agregamos al array
+                this.vuelos.push(nuevoVuelo);  // Lo agregamos al array
+                this.actualizarLocalStorage(); // Actualizamos el localStorage
                 console.log("Vuelo agregado con éxito.");
             }
 
-            //Metodo para eliminar un vuelo por número de vuelo
+            //metodo para eliminar un vuelo por número de vuelo
             eliminarVuelo(numeroVuelo) {
                 const index = this.vuelos.findIndex(v => v.numeroVuelo === numeroVuelo);
                 if (index !== -1) {
-                    this.vuelos.splice(index, 1);  //Eliminamos el vuelo encontrado
+                    this.vuelos.splice(index, 1);  // Eliminamos el vuelo encontrado
+                    this.actualizarLocalStorage(); // Actualizamos el localStorage
                     console.log(`Vuelo con número ${numeroVuelo} eliminado con éxito.`);
                 } else {
                     console.log("Vuelo no encontrado.");
                 }
             }
 
-            //Metodo para modificar los datos de un vuelo
+            //metodo para modificar los datos de un vuelo
             modificarVuelo(numeroVuelo, nuevoOrigen, nuevoDestino, nuevaFecha, nuevaHoraSalida) {
                 const vueloEncontrado = this.vuelos.find(v => v.numeroVuelo === numeroVuelo);
                 if (vueloEncontrado) {
@@ -88,13 +93,14 @@
                     vueloEncontrado.destino = nuevoDestino;
                     vueloEncontrado.fecha = nuevaFecha;
                     vueloEncontrado.horaSalida = nuevaHoraSalida;
+                    this.actualizarLocalStorage(); // Actualizamos el localStorage
                     console.log(`Vuelo con número ${numeroVuelo} modificado con éxito.`);
                 } else {
                     console.log("Vuelo no encontrado.");
                 }
             }
 
-            //Metodo para consultar los datos de un vuelo de forma individual
+            //metodo para consultar los datos de un vuelo de forma individual
             consultarVuelo(numeroVuelo) {
                 const vueloEncontrado = this.vuelos.find(v => v.numeroVuelo === numeroVuelo);
                 if (vueloEncontrado) {
@@ -104,37 +110,41 @@
                 }
             }
 
-            //Metodo para listar todos los vuelos
+            //metodo para listar todos los vuelos
             listarVuelos() {
                 return this.vuelos;
             }
 
-            //Metodo para representar los vuelos en una tabla HTML
+            //metodo para representar los vuelos en una tabla HTML
             mostrarTablaVuelos() {
                 const tablaBody = document.getElementById("tabla-vuelos").getElementsByTagName("tbody")[0];
-                tablaBody.innerHTML = ""; //Limpiar la tabla antes de agregar nuevos datos
+                tablaBody.innerHTML = ""; // Limpiar la tabla antes de agregar nuevos datos
 
                 this.vuelos.forEach(vuelo => {
                     const fila = document.createElement("tr");
 
-                    //Crear celdas para cada propiedad del vuelo
+                    //crear celdas para cada propiedad del vuelo
                     Object.values(vuelo).forEach(valor => {
                         const celda = document.createElement("td");
                         celda.textContent = valor;
                         fila.appendChild(celda);
                     });
 
-                    tablaBody.appendChild(fila);//Agregar la fila a la tabla
+                    tablaBody.appendChild(fila);  //agregar la fila a la tabla
                 });
+            }
+
+            //metodo para actualizar los vuelos en localStorage
+            actualizarLocalStorage() {
+                localStorage.setItem('vuelos', JSON.stringify(this.vuelos));
             }
         }
 
-        //Instanciamos la clase de gestion de vuelos
         const gestionVuelos = new GestionVuelos();
 
-        //Manejador de evento para agregar un vuelo desde el formulario
+        //manejador de evento para agregar un vuelo desde el formulario
         document.getElementById("formulario-vuelo").addEventListener("submit", function(event) {
-            event.preventDefault();  //Evitar el comportamiento por defecto del formulario
+            event.preventDefault();//Evitar el comportamiento por defecto del formulario
 
             //Obtenemos los valores del formulario
             const numeroVuelo = document.getElementById("numeroVuelo").value;
@@ -151,7 +161,7 @@
             document.getElementById("formulario-vuelo").reset();
         });
 
-        //Inicializacion de la tabla vacia
+        //Inicialización de la tabla vacía
         gestionVuelos.mostrarTablaVuelos();
     </script>
 </body>

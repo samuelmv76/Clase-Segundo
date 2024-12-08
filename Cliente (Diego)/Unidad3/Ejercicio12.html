@@ -18,7 +18,7 @@
             let fechaFinMundoMaya = new Date(2012, 10, 21);
             let diferencia = fechaActual - fechaFinMundoMaya;
             let dias = Math.floor(diferencia / (1000 * 60 * 60 * 24));
-            let segundos = Math.floor(diferencia / 1000);
+            let segundos = Math.floor(diferencia / 1000);//Math.floor Se utiliza para redondear un número decimal hacia abajo al entero más cercano.
             document.write("La fecha actual es: " + fechaActual + "<br>");
             document.write("La fecha del fin del mundo maya (21/11/2012) es: " + fechaFinMundoMaya + "<br>");
             document.write("El número de días que han pasado de esa fecha es: " + dias + "<br>");

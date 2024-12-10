@@ -9,9 +9,9 @@ class Vuelo {
         this.importe = parseFloat(nuevaImporte);
     }
 }
-// Variables globales
+
 const vuelos = [];
-// Funciones
+
 function anadirPersona() {
     const codigo = document.getElementById('codigo').value.trim();
     const numPlazas = document.getElementById('numPlazas').value;

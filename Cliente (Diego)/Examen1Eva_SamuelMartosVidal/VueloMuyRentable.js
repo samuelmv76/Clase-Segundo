@@ -28,23 +28,10 @@ function calcularVuelo() {
         const resultado = VueloMuyRentable.CalcularVuelo(vuelo);
         const fila = `
             <tr>
-                <td>${vuelo.nombre}</td>
-                <td>${vuelo.peso}</td>
-                <td>${vuelo.altura}</td>
-                <td>${resultado.importeTotal}</td>
-                <td>${resultado.categoria}</td>
+                <td>${resultado.codigoVuelo}</td>
+                <td>${resultado.ingresoEstimado}</td>
             </tr>
         `;
         tabla.innerHTML += fila;
-    });
-    actualizarListaFueraRango();
-}
-function actualizarListaFueraRango() {
-    const lista = document.getElementById('listaFueraRango');
-    lista.innerHTML = '';
-
-    calculo.obtenerRegistroFueraRango().forEach(({ nombre, importeTotal }) => {
-        const elemento = `<li>${nombre}: IMC ${importeTotal}</li>`;
-        lista.innerHTML += elemento;
     });
 }

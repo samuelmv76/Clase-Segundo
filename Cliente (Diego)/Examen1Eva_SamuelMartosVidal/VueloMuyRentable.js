@@ -1,12 +1,11 @@
-//const vuelos = new Vuelo;
-const calculo = new VueloMuyRentable();
+const vuelos2 = new Vuelo();
+//const calculo = new VueloMuyRentable();
 class VueloMuyRentable {
     constructor() {
-        this.codigoVuelo = vuelos.codigo;
-        this.ingresoEstimado = importeTotal;
-        this.categoria=categoria;
+        this.codigoVuelo = vuelos2.codigo;
+        this.ingresoEstimado = ingresoEstimado;
     }
-    CalcularVuelo(vuelo) {
+    CalcularVuelo(vuelo) {//funcion para calcular el importe total del vuelo
         const importeTotal = vuelo.numPlazas*vuelo.importe;
         let categoria;
         if (importeTotal <10000) {
@@ -17,15 +16,16 @@ class VueloMuyRentable {
             categoria = 'Muy rentable';
             this.registrarVuelo(vuelo.codigoVuelo, importeTotal.toFixed(2));
         }
-        return { importeTotal: importeTotal.toFixed(2), categoria };
+        console.log(importeTotal);
+        return { ingresoEstimado: importeTotal.toFixed(2)};
     }
+    //mostrar el vuelo
 }
 function calcularVuelo() {
     const tabla = document.getElementById('categoriasVuelos').querySelector('tbody');
-    tabla.innerHTML = ''; // Limpiar tabla
-
-    vuelos.forEach(vuelo => {
-        const resultado = calculo.CalcularVuelo(vuelo);
+    tabla.innerHTML = '';
+    vuelos2.forEach(vuelo => {
+        const resultado = VueloMuyRentable.CalcularVuelo(vuelo);
         const fila = `
             <tr>
                 <td>${vuelo.nombre}</td>
@@ -35,7 +35,7 @@ function calcularVuelo() {
                 <td>${resultado.categoria}</td>
             </tr>
         `;
-        tabla.innerHTML += fila; // Actualizar la tabla
+        tabla.innerHTML += fila;
     });
     actualizarListaFueraRango();
 }

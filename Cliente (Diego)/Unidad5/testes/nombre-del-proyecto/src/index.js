@@ -6,3 +6,21 @@ const rootElement = document.getElementById('root');
 const root = ReactDOM.createRoot(rootElement);
 
 root.render(jsxElement);
+
+function insertarTabla() {
+    const filaElement=
+    <table> 
+        <th>
+            <td>
+                Holita
+            </td>
+        </th>
+    </table>;
+    const insertfila=ReactDOM.createRoot(rootElement);
+    insertfila.render(filaElement);
+};
+
+document.addEventListener("click", function() {
+    document.getElementById("bot").click();
+    insertarTabla();   
+});

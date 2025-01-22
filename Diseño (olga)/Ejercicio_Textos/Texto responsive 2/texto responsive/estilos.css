@@ -1,0 +1,16 @@
+/* Define tamaños personalizados de fuente */
+.fs-sm {
+    font-size: 1rem; /* Tamaño para pantallas pequeñas */
+  }
+  
+  @media (min-width: 768px) {
+    .fs-md {
+      font-size: 1.5rem; /* Tamaño para pantallas medianas */
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .fs-lg {
+      font-size: 2rem; /* Tamaño para pantallas grandes */
+    }
+  }

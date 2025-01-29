@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import Acercade from './components/Acercade';
 import Variables from './components/Variables';
+import AdiosMundo from './components/AdiosMundo';
 
 const App = ()=> {
   const nombre= 'Juan Diego'
@@ -21,10 +22,9 @@ const App = ()=> {
         >
           Learn React
         </a>
-        <h1>Hola, {nombre}</h1>
-        
+        <Variables />
+        <AdiosMundo />
       </header>
-      
       <Acercade />
       
     </div>

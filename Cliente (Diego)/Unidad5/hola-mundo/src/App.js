@@ -2,10 +2,24 @@ import logo from './logo.svg';
 import './App.css';
 import Acercade from './components/Acercade';
 import Variables from './components/Variables';
-import AdiosMundo from './components/AdiosMundo';
+import { AdiosMundo } from './components/AdiosMundo';
+import Bucles from './components/Bucles';
+import Saludar from './components/Saludar';
+import Saludar2 from './components/Saludar2';
 
 const App = ()=> {
   const nombre= 'Juan Diego'
+
+  const usuario = {
+    nombre: "Juan Diego",
+    edad: 54,
+    color: "Verde"
+  }
+  
+  const saludarFn = (nombre) => {
+    alert("Hola, " + nombre);
+  };
+
 
   return (
     <div className="App">
@@ -22,9 +36,13 @@ const App = ()=> {
         >
           Learn React
         </a>
+        <h1>Hola Mundo {nombre}</h1>
         <Variables />
         <AdiosMundo />
-      </header>
+        <Bucles />        
+        <Saludar userInfo={usuario} />
+        <Saludar2 userInfo={usuario} saludarFn={saludarFn} />
+      </header> 
       <Acercade />
       
     </div>

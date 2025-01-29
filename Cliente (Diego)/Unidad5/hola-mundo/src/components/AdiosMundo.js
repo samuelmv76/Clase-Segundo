@@ -1,7 +1,3 @@
 export const AdiosMundo = () => {
-    return (
-        <>
-            <h3>Adios</h3>
-        </>
-    )
-}
+    return <h1>Adiós, Mundo!</h1>;
+  };  

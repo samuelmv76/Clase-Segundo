@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Proyecto Práctico Curso BootStrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Course CSS -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <!-- Encabezado siempre visible -->
+      <header class="d-block">
+        <h1>Encabezado siempre visible</h1>
+      </header>
+
+      <!-- Imagen siempre visible -->
+      <div class="d-block">
+        <img src="imagenes/paisaje3.jpeg" alt="Imagen siempre visible" class="img-fluid">
+        <p>Imagen siempre visible</p>
+      </div>
+      <!-- Parrafo visible en pantallas extra pequeñas -->
+      <p class="d-block d-sm-none text-danger">
+        Párrafo visible en pantallas extra pequeñas (xs).
+      </p>      
+      <!-- Imagen solo para dispositivos grandes(sm) -->
+        <div class="d-block">
+        <img src="imagenes/paisaje2.jpeg" alt="Imagen solo para dispositivos pequeños(sm)" class="img-fluid d-block d-sm-block">
+          <p>Imagen solo para dispositivos pequeños(sm)</p>
+      </div>
+
+      <!-- Encabezado visible desde dispositivos medianos (md) -->
+      <header class="d-none d-md-block text-success">
+        <h2>Encabezado visible desde dispositivos medianos (md)</h2>
+      </header>
+
+      <!-- Imagen solo para dispositivos grandes(lg) -->
+    <div class="d-none d-lg-block">
+      <img src="imagenes/paisaje2.jpeg" alt="Imagen solo para dispositivos grandes(lg)" class="img-fluid d-none d-lg-block">
+        <p>Imagen solo para dispositivos grandes(lg)</p>
+    </div>
+      <!-- Párrafo visible desde dispositivos extra grandes (xl) -->
+      <p class="d-none d-xl-block text-info">
+        Párrafo visible desde dispositivos extra grandes (xl).
+      </p>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

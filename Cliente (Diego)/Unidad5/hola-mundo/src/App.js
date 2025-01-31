@@ -6,7 +6,7 @@ import { AdiosMundo } from './components/AdiosMundo';
 import Bucles from './components/Bucles';
 import Saludar from './components/Saludar';
 import Saludar2 from './components/Saludar2';
-import EjemploEstado from './components/EjemploEstado';
+import EjemploEstado3 from './components/EjemploEstado3';
 
 const App = ()=> {
   const nombre= 'Juan Diego'
@@ -43,8 +43,7 @@ const App = ()=> {
         <Bucles />        
         <Saludar userInfo={usuario} />
         <Saludar2 userInfo={usuario} saludarFn={saludarFn} />
-        <EjemploEstado />
-        
+        <EjemploEstado3 />
       </header> 
       <Acercade />
       

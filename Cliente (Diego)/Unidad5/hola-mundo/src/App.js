@@ -14,6 +14,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <p>learn react</p>
         <Visor imagenes={imagenesSrc} />
       </header>
     </div>

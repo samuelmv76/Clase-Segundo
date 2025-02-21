@@ -274,3 +274,10 @@ footer {
     color: #ffd700;
     transform: scale(1.2); 
 }
+
+
+
+.container{
+    margin : 0;
+    width: 100%;
+}

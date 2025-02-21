@@ -4,81 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final Champions League 2018</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link href="style/style.css" rel="stylesheet">
 </head>
-<body>
 
-    <header class="py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="m-0">Final de la Champions League 2018</h1>
-            <nav>
-                <ul class="nav">
-                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#lineups">Alineaciones</a></li>
-                    <li class="nav-item"><a class="nav-link text-white" href="#lineups">Estadisticas</a></li>                 
-                </ul>
-            </nav>
-            <a href="#login" class="btn btn-outline-light">
+<header>
+    <nav class="navbar ">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <a class="navbar-brand m-0 text-light" href="#">Final de la Champions League 2018</a>
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#lineups">Alineaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="#stats">Estadísticas</a></li>
+            </ul>
+            <a href="#login" class="btn btn-outline-dark">
                 <img src="imagenes-videos/Champions-League-png-blanco.png" alt="Iniciar sesión" class="login-img" width="40">
             </a>
         </div>
-    </header>
-
-    <main class="container mt-4">
-        <!-- Sección 2: Alineaciones -->
-        <section id="lineups" class="lineups">
-            <h2>Alineaciones</h2>
-        
-            <!-- Alineación del Real Madrid -->
-            <div class="team-section">
-                <div class="team-info">
-                    <h3>Real Madrid</h3>
-                    <ul>
-                        <li><span class="number">1</span> Keylor Navas <span class="position Portero">Portero</span></li>
-                        <li><span class="number">12</span> Marcelo <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">4</span> Sergio Ramos (C) <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">5</span> Raphaël Varane <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">2</span> Dani Carvajal <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">8</span> Toni Kroos <span class="position Centrocampista">Centrocampista</span></li>
-                        <li><span class="number">10</span> Luka Modrić <span class="position Centrocampista">Centrocampista</span></li>
-                        <li><span class="number">14</span> Casemiro <span class="position Centrocampista">Centrocampista</span></li>
-                        <li><span class="number">23</span> Isco <span class="position Centrocampista">Centrocampista</span></li>
-                        <li><span class="number">7</span> Cristiano Ronaldo <span class="position Delantero">Delantero</span></li>
-                        <li><span class="number">9</span> Karim Benzema <span class="position Delantero">Delantero</span></li>
-                    </ul>
-                </div>
-                <div class="team-photo">
-                    <img src="imagenes-videos/alineacion-realmadrid.jpg" alt="Plantilla del Real Madrid">
-                </div>
-            </div>
-        
-            <!-- Alineación del Liverpool -->
-            <div class="team-section">
-                <div class="team-info">
-                    <h3>Liverpool</h3>
-                    <ul>
-                        <li><span class="number">1</span> Loris Karius <span class="position Portero">Portero</span></li>
-                        <li><span class="number">26</span> Andrew Robertson <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">4</span> Virgil van Dijk <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">6</span> Dejan Lovren <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">66</span> Trent Alexander-Arnold <span class="position Defensa">Defensa</span></li>
-                        <li><span class="number">7</span> James Milner <span class="position Centrocampista">Centrocampista</span></li>
-                        <li><span class="number">14</span> Jordan Henderson (C) <span class="position Centrocampista">Centrocampista</span></li>
-                        <li><span class="number">5</span> Georginio Wijnaldum <span class="position Centrocampista">Centrocampista</span></li>
-                        <li><span class="number">10</span> Sadio Mané <span class="position Delantero">Delantero</span></li>
-                        <li><span class="number">9</span> Roberto Firmino <span class="position Delantero">Delantero</span></li>
-                        <li><span class="number">11</span> Mohamed Salah <span class="position Delantero">Delantero</span></li>
-                    </ul>
-                </div>
-                <div class="team-photo">
-                    <img src="imagenes-videos/alineacion-liverpool.jpg" alt="Plantilla del Liverpool">
-                </div>
-            </div>
-        </section>
-    </main>
+    </nav>
+</header>
     
+    <main class="container mt-4 mb-4">
+        <div id="intro" class="bg-light rounded intro">
+            <h2>Real Madrid vs Liverpool</h2>
+            <p>La final de la UEFA Champions League 2018 se disputó el 26 de mayo en el Estadio Olímpico de Kiev, Ucrania. Fue un emocionante enfrentamiento entre dos equipos legendarios.</p>
+        </div>
+    </main>
     
     <footer class="text-white text-center py-3">
         <p>&copy; 2018 UEFA Champions League FINAL</p>
@@ -89,7 +41,6 @@
             <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
         </div>
     </footer>
-    
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

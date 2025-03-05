@@ -77,6 +77,11 @@ nav ul li:hover {
 }
 
 /* Sección Introducción */
+.clase-main{ /* sirve para centrar el div de la pagina principal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .intro {
     background: url('../imagenes-videos/champions.jpg') no-repeat center center/cover;
     text-align: center;

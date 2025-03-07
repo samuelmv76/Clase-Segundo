@@ -9,14 +9,13 @@ function SpotiMain() {
   // Función asíncrona para obtener las canciones del JSON
   useEffect(() => {
                         async function fetchCanciones() {
-                        try {
-                            // Ajusta la ruta si tu JSON está en otra ubicación
-                            const response = await fetch('/json/Spotify.json');
-                            const data = await response.json();
-                            setCanciones(data);
-                        } catch (error) {
-                            console.error('Error al obtener las canciones:', error);
-                        }
+                          try {
+                              const response = await fetch('/json/Spotify.json');
+                              const data = await response.json();
+                              setCanciones(data);
+                          } catch (error) {
+                              console.error('Error al obtener las canciones:', error);
+                          }
                         }
 
                         fetchCanciones();

@@ -1,0 +1,402 @@
+[
+  {
+    "movie_id": 1,
+    "title": "Pel\u00edcula 1",
+    "director": "Director 1",
+    "release_date": "2001-02-02",
+    "duration_min": 91,
+    "rating": 5.1
+  },
+  {
+    "movie_id": 2,
+    "title": "Pel\u00edcula 2",
+    "director": "Director 2",
+    "release_date": "2002-03-03",
+    "duration_min": 92,
+    "rating": 5.2
+  },
+  {
+    "movie_id": 3,
+    "title": "Pel\u00edcula 3",
+    "director": "Director 3",
+    "release_date": "2003-04-04",
+    "duration_min": 93,
+    "rating": 5.3
+  },
+  {
+    "movie_id": 4,
+    "title": "Pel\u00edcula 4",
+    "director": "Director 4",
+    "release_date": "2004-05-05",
+    "duration_min": 94,
+    "rating": 5.4
+  },
+  {
+    "movie_id": 5,
+    "title": "Pel\u00edcula 5",
+    "director": "Director 5",
+    "release_date": "2005-06-06",
+    "duration_min": 95,
+    "rating": 5.5
+  },
+  {
+    "movie_id": 6,
+    "title": "Pel\u00edcula 6",
+    "director": "Director 6",
+    "release_date": "2006-07-07",
+    "duration_min": 96,
+    "rating": 5.6
+  },
+  {
+    "movie_id": 7,
+    "title": "Pel\u00edcula 7",
+    "director": "Director 7",
+    "release_date": "2007-08-08",
+    "duration_min": 97,
+    "rating": 5.7
+  },
+  {
+    "movie_id": 8,
+    "title": "Pel\u00edcula 8",
+    "director": "Director 8",
+    "release_date": "2008-09-09",
+    "duration_min": 98,
+    "rating": 5.8
+  },
+  {
+    "movie_id": 9,
+    "title": "Pel\u00edcula 9",
+    "director": "Director 9",
+    "release_date": "2009-10-10",
+    "duration_min": 99,
+    "rating": 5.9
+  },
+  {
+    "movie_id": 10,
+    "title": "Pel\u00edcula 10",
+    "director": "Director 0",
+    "release_date": "2010-11-11",
+    "duration_min": 100,
+    "rating": 6.0
+  },
+  {
+    "movie_id": 11,
+    "title": "Pel\u00edcula 11",
+    "director": "Director 1",
+    "release_date": "2011-12-12",
+    "duration_min": 101,
+    "rating": 6.1
+  },
+  {
+    "movie_id": 12,
+    "title": "Pel\u00edcula 12",
+    "director": "Director 2",
+    "release_date": "2012-01-13",
+    "duration_min": 102,
+    "rating": 6.2
+  },
+  {
+    "movie_id": 13,
+    "title": "Pel\u00edcula 13",
+    "director": "Director 3",
+    "release_date": "2013-02-14",
+    "duration_min": 103,
+    "rating": 6.3
+  },
+  {
+    "movie_id": 14,
+    "title": "Pel\u00edcula 14",
+    "director": "Director 4",
+    "release_date": "2014-03-15",
+    "duration_min": 104,
+    "rating": 6.4
+  },
+  {
+    "movie_id": 15,
+    "title": "Pel\u00edcula 15",
+    "director": "Director 5",
+    "release_date": "2015-04-16",
+    "duration_min": 105,
+    "rating": 6.5
+  },
+  {
+    "movie_id": 16,
+    "title": "Pel\u00edcula 16",
+    "director": "Director 6",
+    "release_date": "2016-05-17",
+    "duration_min": 106,
+    "rating": 6.6
+  },
+  {
+    "movie_id": 17,
+    "title": "Pel\u00edcula 17",
+    "director": "Director 7",
+    "release_date": "2017-06-18",
+    "duration_min": 107,
+    "rating": 6.7
+  },
+  {
+    "movie_id": 18,
+    "title": "Pel\u00edcula 18",
+    "director": "Director 8",
+    "release_date": "2018-07-19",
+    "duration_min": 108,
+    "rating": 6.8
+  },
+  {
+    "movie_id": 19,
+    "title": "Pel\u00edcula 19",
+    "director": "Director 9",
+    "release_date": "2019-08-20",
+    "duration_min": 109,
+    "rating": 6.9
+  },
+  {
+    "movie_id": 20,
+    "title": "Pel\u00edcula 20",
+    "director": "Director 0",
+    "release_date": "2000-09-21",
+    "duration_min": 110,
+    "rating": 7.0
+  },
+  {
+    "movie_id": 21,
+    "title": "Pel\u00edcula 21",
+    "director": "Director 1",
+    "release_date": "2001-10-22",
+    "duration_min": 111,
+    "rating": 7.1
+  },
+  {
+    "movie_id": 22,
+    "title": "Pel\u00edcula 22",
+    "director": "Director 2",
+    "release_date": "2002-11-23",
+    "duration_min": 112,
+    "rating": 7.2
+  },
+  {
+    "movie_id": 23,
+    "title": "Pel\u00edcula 23",
+    "director": "Director 3",
+    "release_date": "2003-12-24",
+    "duration_min": 113,
+    "rating": 7.3
+  },
+  {
+    "movie_id": 24,
+    "title": "Pel\u00edcula 24",
+    "director": "Director 4",
+    "release_date": "2004-01-25",
+    "duration_min": 114,
+    "rating": 7.4
+  },
+  {
+    "movie_id": 25,
+    "title": "Pel\u00edcula 25",
+    "director": "Director 5",
+    "release_date": "2005-02-26",
+    "duration_min": 115,
+    "rating": 7.5
+  },
+  {
+    "movie_id": 26,
+    "title": "Pel\u00edcula 26",
+    "director": "Director 6",
+    "release_date": "2006-03-27",
+    "duration_min": 116,
+    "rating": 7.6
+  },
+  {
+    "movie_id": 27,
+    "title": "Pel\u00edcula 27",
+    "director": "Director 7",
+    "release_date": "2007-04-28",
+    "duration_min": 117,
+    "rating": 7.7
+  },
+  {
+    "movie_id": 28,
+    "title": "Pel\u00edcula 28",
+    "director": "Director 8",
+    "release_date": "2008-05-01",
+    "duration_min": 118,
+    "rating": 7.8
+  },
+  {
+    "movie_id": 29,
+    "title": "Pel\u00edcula 29",
+    "director": "Director 9",
+    "release_date": "2009-06-02",
+    "duration_min": 119,
+    "rating": 7.9
+  },
+  {
+    "movie_id": 30,
+    "title": "Pel\u00edcula 30",
+    "director": "Director 0",
+    "release_date": "2010-07-03",
+    "duration_min": 120,
+    "rating": 8.0
+  },
+  {
+    "movie_id": 31,
+    "title": "Pel\u00edcula 31",
+    "director": "Director 1",
+    "release_date": "2011-08-04",
+    "duration_min": 121,
+    "rating": 8.1
+  },
+  {
+    "movie_id": 32,
+    "title": "Pel\u00edcula 32",
+    "director": "Director 2",
+    "release_date": "2012-09-05",
+    "duration_min": 122,
+    "rating": 8.2
+  },
+  {
+    "movie_id": 33,
+    "title": "Pel\u00edcula 33",
+    "director": "Director 3",
+    "release_date": "2013-10-06",
+    "duration_min": 123,
+    "rating": 8.3
+  },
+  {
+    "movie_id": 34,
+    "title": "Pel\u00edcula 34",
+    "director": "Director 4",
+    "release_date": "2014-11-07",
+    "duration_min": 124,
+    "rating": 8.4
+  },
+  {
+    "movie_id": 35,
+    "title": "Pel\u00edcula 35",
+    "director": "Director 5",
+    "release_date": "2015-12-08",
+    "duration_min": 125,
+    "rating": 8.5
+  },
+  {
+    "movie_id": 36,
+    "title": "Pel\u00edcula 36",
+    "director": "Director 6",
+    "release_date": "2016-01-09",
+    "duration_min": 126,
+    "rating": 8.6
+  },
+  {
+    "movie_id": 37,
+    "title": "Pel\u00edcula 37",
+    "director": "Director 7",
+    "release_date": "2017-02-10",
+    "duration_min": 127,
+    "rating": 8.7
+  },
+  {
+    "movie_id": 38,
+    "title": "Pel\u00edcula 38",
+    "director": "Director 8",
+    "release_date": "2018-03-11",
+    "duration_min": 128,
+    "rating": 8.8
+  },
+  {
+    "movie_id": 39,
+    "title": "Pel\u00edcula 39",
+    "director": "Director 9",
+    "release_date": "2019-04-12",
+    "duration_min": 129,
+    "rating": 8.9
+  },
+  {
+    "movie_id": 40,
+    "title": "Pel\u00edcula 40",
+    "director": "Director 0",
+    "release_date": "2000-05-13",
+    "duration_min": 130,
+    "rating": 9.0
+  },
+  {
+    "movie_id": 41,
+    "title": "Pel\u00edcula 41",
+    "director": "Director 1",
+    "release_date": "2001-06-14",
+    "duration_min": 131,
+    "rating": 9.1
+  },
+  {
+    "movie_id": 42,
+    "title": "Pel\u00edcula 42",
+    "director": "Director 2",
+    "release_date": "2002-07-15",
+    "duration_min": 132,
+    "rating": 9.2
+  },
+  {
+    "movie_id": 43,
+    "title": "Pel\u00edcula 43",
+    "director": "Director 3",
+    "release_date": "2003-08-16",
+    "duration_min": 133,
+    "rating": 9.3
+  },
+  {
+    "movie_id": 44,
+    "title": "Pel\u00edcula 44",
+    "director": "Director 4",
+    "release_date": "2004-09-17",
+    "duration_min": 134,
+    "rating": 9.4
+  },
+  {
+    "movie_id": 45,
+    "title": "Pel\u00edcula 45",
+    "director": "Director 5",
+    "release_date": "2005-10-18",
+    "duration_min": 135,
+    "rating": 9.5
+  },
+  {
+    "movie_id": 46,
+    "title": "Pel\u00edcula 46",
+    "director": "Director 6",
+    "release_date": "2006-11-19",
+    "duration_min": 136,
+    "rating": 9.6
+  },
+  {
+    "movie_id": 47,
+    "title": "Pel\u00edcula 47",
+    "director": "Director 7",
+    "release_date": "2007-12-20",
+    "duration_min": 137,
+    "rating": 9.7
+  },
+  {
+    "movie_id": 48,
+    "title": "Pel\u00edcula 48",
+    "director": "Director 8",
+    "release_date": "2008-01-21",
+    "duration_min": 138,
+    "rating": 9.8
+  },
+  {
+    "movie_id": 49,
+    "title": "Pel\u00edcula 49",
+    "director": "Director 9",
+    "release_date": "2009-02-22",
+    "duration_min": 139,
+    "rating": 9.9
+  },
+  {
+    "movie_id": 50,
+    "title": "Pel\u00edcula 50",
+    "director": "Director 0",
+    "release_date": "2010-03-23",
+    "duration_min": 140,
+    "rating": 5.0
+  }
+]

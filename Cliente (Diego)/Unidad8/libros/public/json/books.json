@@ -1,0 +1,8 @@
+[
+  {"id": 1, "title": "El Hobbit", "author": "J.R.R. Tolkien", "year": 1937, "rating": 4.8},
+  {"id": 2, "title": "El Señor de los Anillos", "author": "J.R.R. Tolkien", "year": 1954, "rating": 4.9},
+  {"id": 3, "title": "Harry Potter", "author": "J.K. Rowling", "year": 1997, "rating": 4.7},
+  {"id": 3, "title": "Don Quijote", "author": "Miguel de Cervantes", "year": 1605, "rating": 4.7},
+  {"id": 4, "title": "1984", "author": "George Orwell", "year": 1949, "rating": 4.6},
+  {"id": 5, "title": "Cien años de soledad", "author": "Gabriel García Márquez", "year": 1967, "rating": 4.9}
+]

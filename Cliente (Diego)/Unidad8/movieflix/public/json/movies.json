@@ -1,0 +1,26 @@
+[
+  {
+    "movie_id": 1,
+    "title": "Inception",
+    "director": "Christopher Nolan",
+    "release_date": "2010-07-16",
+    "duration_min": 148,
+    "rating": 8.8
+  },
+  {
+    "movie_id": 2,
+    "title": "The Matrix",
+    "director": "Lana Wachowski, Lilly Wachowski",
+    "release_date": "1999-03-31",
+    "duration_min": 136,
+    "rating": 8.7
+  },
+  {
+    "movie_id": 3,
+    "title": "Interstellar",
+    "director": "Christopher Nolan",
+    "release_date": "2014-11-07",
+    "duration_min": 169,
+    "rating": 8.6
+  }
+]

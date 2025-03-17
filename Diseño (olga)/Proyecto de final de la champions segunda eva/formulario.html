@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Opinión</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        form {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid d-flex justify-content-between align-items-center">
+                <a class="navbar-brand m-0 text-light" href="#">Final de la Champions League 2018</a>
+                <ul class="nav d-flex flex-row">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="alineaciones.html">Alineaciones</a></li>
+                    <li class="nav-item"><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
+                </ul>
+                <a href="formulario.html" class="btn btn-outline-light">
+                    <img src="imagenes-videos/Champions-League-png-blanco.png" alt="Iniciar sesión" class="login-img" width="40">
+                </a>
+            </div>
+        </nav>
+    </header>
+    <div class="clase-main">
+    <div class="container mt-5 mb-5">
+        <h2 class="text-center mb-3 text-light">Déjanos tu opinión</h2>
+        <form class="bg-light p-4 rounded shadow">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Comentario:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+    </div>
+    </div>
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2018 UEFA Champions League FINAL</p>
+        <div>
+            <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

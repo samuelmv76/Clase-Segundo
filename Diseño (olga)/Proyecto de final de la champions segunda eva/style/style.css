@@ -292,4 +292,33 @@ footer {
     color: #fff !important; /* Texto en blanco */
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8); /* Sombra para mejor legibilidad */
   }
-  
+  /*formulario*/
+  #form-section {
+    background: #001A57;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+#form-section h2 {
+    color: #ffd700;
+    text-transform: uppercase;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #003883;
+    border: none;
+}
+
+form button:hover {
+    background-color: #001a57;
+}

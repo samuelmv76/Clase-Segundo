@@ -15,8 +15,8 @@
             <a class="navbar-brand m-0 text-light" href="#">Final de la Champions League 2018</a>
             <ul class="nav d-flex flex-row">
                 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                <li class="nav-item"><a class="nav-link" href="alineaciones.html">Alineaciones</a></li>
-                <li class="nav-item"><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
+                <li class="nav-item"><a class="nav-link" href="Portfolio/alineaciones.html">Alineaciones</a></li>
+                <li class="nav-item"><a class="nav-link" href="Portfolio/estadisticas.html">Estadísticas</a></li>
             </ul>
             <a href="formulario.html" class="btn btn-outline-light">
                 <img src="imagenes-videos/Champions-League-png-blanco.png" alt="Iniciar sesión" class="login-img" width="40">
@@ -29,37 +29,44 @@
     <main class="container mt-4 mb-4">
         <div class="row">
             <!-- Sección Principal -->
-            <div class="col-lg-8">
+            <div class="col-lg-12 col-sm-8">
                 <div id="intro" class="bg-light rounded intro p-4">
                     <h2 class="display-3">Real Madrid vs Liverpool</h2>
                     <p class="lead">La final de la UEFA Champions League 2018 se disputó el 26 de mayo en el Estadio Olímpico de Kiev, Ucrania. Fue un emocionante enfrentamiento entre dos equipos legendarios.</p>
                 </div>
+                <!--
+                    Debajo de la imagen coloca un encabezado y debajo en una misma fila un párrafo de texto y una imagen. 
+                    Decide tú el porcentaje que ocupen cada nuevo elemento.
+                    Con éstos nuevos elementos en la pantalla haz que en dispositivos móviles se muestren de uno en uno.
+                -->
+                <div class="mt-4">
+                    <h3 class="text-center">Resumen del Partido</h3>
+                    <p class="text-center">El Real Madrid se coronó campeón tras vencer al Liverpool 3-1, logrando su 13ª Champions League.</p>
+                    <img src="imagenes-videos/logo_madrid.png" alt="Real Madrid" class="img-fluid rounded mb-4 d-block w-50 mx-auto">
+                </div>
             </div>
 
-            <!-- Aside con información adicional -->
-            <aside class="col-lg-4 mt-4 mt-lg-0">
-                <div class="card text-white bg-dark p-3">
-                    <h3 class="card-title text-center">Datos Relevantes</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item bg-dark text-white">🏆 Real Madrid logró su 13ª Champions.</li>
-                        <li class="list-group-item bg-dark text-white">🔥 Gareth Bale anotó un golazo de chilena.</li>
-                        <li class="list-group-item bg-dark text-white">⚽ Cristiano Ronaldo fue el máximo goleador.</li>
-                        <li class="list-group-item bg-dark text-white">🛑 Loris Karius cometió errores cruciales.</li>
-                    </ul>
-                </div>
-            </aside>
         </div>
     </main>
 </div>
 
-<footer class="text-white text-center py-3">
-    <p>&copy; 2018 UEFA Champions League FINAL</p>
-    <div class="social-icons">
-        <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-        <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-        <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
-    </div>
+<!--
+Para todas las páginas reorganiza el footer,
+coloca en la misma línea a la izquierda el copyright y a la derecha los iconos de las redes sociales.
+En dispositivos móviles haz que se muestre arriba el copyright y abajo los iconos.
+-->
+<footer class="text-white py-3">
+
+            <div class="misma-linea">
+                <p>&copy; 2018 UEFA Champions League FINAL</p><!--/*No paraece que este todo en la misma linea por los iconos que son mas grandes se puede mirar en el f12*/-->
+                <div class="social-icons">
+                    <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

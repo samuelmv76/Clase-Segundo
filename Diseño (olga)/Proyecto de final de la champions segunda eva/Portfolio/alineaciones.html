@@ -6,7 +6,7 @@
     <title>Final Champions League 2018</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
 
@@ -15,12 +15,12 @@
             <div class="container-fluid d-flex justify-content-between align-items-center">
                 <a class="navbar-brand m-0 text-light" href="#">Final de la Champions League 2018</a>
                 <ul class="nav d-flex flex-row">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="alineaciones.html">Alineaciones</a></li>
                     <li class="nav-item"><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
                 </ul>
                 <a href="formulario.html" class="btn btn-outline-light">
-                    <img src="imagenes-videos/Champions-League-png-blanco.png" alt="Iniciar sesión" class="login-img" width="40">
+                    <img src="../imagenes-videos/Champions-League-png-blanco.png" alt="Iniciar sesión" class="login-img" width="40">
                 </a>
             </div>
         </nav>
@@ -54,7 +54,7 @@
                                 </ul>
                             </div>
                             <div class="team-photo">
-                                <img src="imagenes-videos/alineacion-realmadrid.jpg" alt="Plantilla del Real Madrid">
+                                <img src="../imagenes-videos/alineacion-realmadrid.jpg" alt="Plantilla del Real Madrid">
                             </div>
                         </div>
                     </div>
@@ -81,24 +81,67 @@
                                 </ul>
                             </div>
                             <div class="team-photo">
-                                <img src="imagenes-videos/alineacion-liverpool.jpg" alt="Plantilla del Liverpool">
+                                <img src="../imagenes-videos/alineacion-liverpool.jpg" alt="Plantilla del Liverpool">
                             </div>
                         </div>
                     </div>
+                </div><!--fin del row-->
+
+                <!--Debajo de las cards coloca un encabezado denominado Jugadores Real Madrid 
+                y debajo de él una galería de al menos 4 imágenes.
+                Haz lo mismo para Jugadores Liverpool.
+                Haz responsive la nueva página de manera que en dispositivos móviles se muestren los encabezados 
+                y las imágenes unas encima de otras, en dispositivos mayores deben de mostrarse de 2 en 2 y de 4 en 4.
+                -->
+                <h2 class="text-center mb-4">Jugadores Real Madrid</h2>
+                    <div class="row mb-4">
+                        <div class="col-md-3 col-sm-6 mb-2">
+                            <img src="../imagenes-videos/ronaldo.avif" alt="Cristiano Ronaldo" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-2">
+                            <img src="../imagenes-videos/mane.webp" alt="Bale" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-2">
+                            <img src="../imagenes-videos/salah.jpg" alt="Bale" class="img-fluid rounded">
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-2">
+                            <img src="../imagenes-videos/ronaldo.avif" alt="Gareth Bale" class="img-fluid rounded">
+                        </div>
+                    </div>
+                <h2 class="text-center mb-4">Jugadores Liverpool</h2>
+                <div class="row mb-4">
+                    <div class="col-md-3 col-sm-6 mb-2">
+                        <img src="../imagenes-videos/ronaldo.avif" alt="Cristiano Ronaldo" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-2">
+                        <img src="../imagenes-videos/mane.webp" alt="Bale" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-2">
+                        <img src="../imagenes-videos/salah.jpg" alt="Bale" class="img-fluid rounded">
+                    </div>
+                    <div class="col-md-3 col-sm-6 mb-2">
+                        <img src="../imagenes-videos/ronaldo.avif" alt="Gareth Bale" class="img-fluid rounded">
+                    </div>
                 </div>
+
             </section>
         </main>
     </div><!--clase-main-->
     
-    <footer class="text-white text-center py-3">
-        <p>&copy; 2018 UEFA Champions League FINAL</p>
-        <div>
-            <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+
+    <footer class="text-white py-3">
+
+        <div class="misma-linea">
+            <p>&copy; 2018 UEFA Champions League FINAL</p><!--/*No paraece que este todo en la misma linea por los iconos que son mas grandes se puede mirar en el f12*/-->
+            <div class="social-icons">
+                <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-    </footer>
+
+</footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

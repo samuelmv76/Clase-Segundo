@@ -13,7 +13,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style/style.css" />
+  <link rel="stylesheet" href="../style/style.css" />
 </head>
 <body>
 
@@ -23,13 +23,13 @@
       <div class="container-fluid d-flex justify-content-between align-items-center">
         <a class="navbar-brand m-0 text-light" href="#">Final de la Champions League 2018</a>
         <ul class="nav d-flex flex-row">
-          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
           <li class="nav-item"><a class="nav-link" href="alineaciones.html">Alineaciones</a></li>
           <li class="nav-item"><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
         </ul>
         <a href="formulario.html" class="btn btn-outline-light">
           <img
-            src="imagenes-videos/Champions-League-png-blanco.png"
+            src="../imagenes-videos/Champions-League-png-blanco.png"
             alt="Iniciar sesión"
             class="login-img"
             width="40"
@@ -41,10 +41,10 @@
 
   <!-- Contenido principal -->
   <div class="clase-main">
-    <main class="container mt-4">
+    <main class="container mt-4 row">
       
       <!-- Sección Carrusel -->
-      <section id="stats">
+      <section id="stats" class="col-lg-6 mt-4">
         <h2 class="text-center mb-4">Jugadores Destacados</h2>
 
         <!-- Carrusel de 4 jugadores -->
@@ -53,8 +53,8 @@
 
             <!-- Cristiano Ronaldo -->
             <div class="carousel-item active">
-              <img
-                src="imagenes-videos/ronaldo.avif"
+              <img                
+                src="../imagenes-videos/ronaldo.avif"                                                                     
                 class="d-block w-100"
                 alt="Cristiano Ronaldo"
               />
@@ -66,11 +66,11 @@
                 </p>
               </div>
             </div>
-
+                        
             <!-- Gareth Bale -->
             <div class="carousel-item">
               <img
-                src="imagenes-videos/bale.avif"
+                src="../imagenes-videos/bale.avif"
                 class="d-block w-100"
                 alt="Gareth Bale"
               />
@@ -86,7 +86,7 @@
             <!-- Mohamed Salah -->
             <div class="carousel-item">
               <img
-                src="imagenes-videos/salah.jpg"
+                src="../imagenes-videos/salah.jpg"
                 class="d-block w-100"
                 alt="Mohamed Salah"
               />
@@ -102,7 +102,7 @@
             <!-- Sadio Mané -->
             <div class="carousel-item">
               <img
-                src="imagenes-videos/mane2webp.webp"
+                src="../imagenes-videos/mane2webp.webp"
                 class="d-block w-100"
                 alt="Sadio Mané"
               />
@@ -137,6 +137,30 @@
           </button>
         </div>
       </section>
+
+       <!--
+Aunque no tenga mucho que ver con la página coloca un formulario a la derecha del carrusel 
+de manera que el carrusel ocupe el 60% y el formulario el 40%.
+En dispositivos móviles haz que éstos nuevos elementos se muestren uno encima del otro. 
+    </div>
+        -->
+        <aside class="col-lg-4 mt-4 mt-lg-4 ms-auto">
+          <form class="bg-dark p-4 rounded shadow">
+            <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="mensaje" class="form-label">Comentario:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" class="form-control" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        </form>
+      </aside>
 
       <!-- Sección Estadísticas de la Final -->
       <section id="matchStats" class="mt-5">
@@ -191,15 +215,19 @@
     </main>
   </div>
 
-  <!-- Footer -->
-  <footer class="text-white text-center py-3">
-    <p>&copy; 2018 UEFA Champions League FINAL</p>
-    <div>
-      <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
-      <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-      <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+
+  <footer class="text-white py-3">
+
+    <div class="misma-linea">
+        <p>&copy; 2018 UEFA Champions League FINAL</p><!--/*No paraece que este todo en la misma linea por los iconos que son mas grandes se puede mirar en el f12*/-->
+        <div class="social-icons">
+            <a href="https://facebook.com" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://twitter.com" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+        </div>
     </div>
+
   </footer>
 
   <!-- Bootstrap JS -->
